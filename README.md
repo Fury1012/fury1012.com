@@ -1,2 +1,2 @@
 # fury1012.com
-silly website
+learning how to make a website....
