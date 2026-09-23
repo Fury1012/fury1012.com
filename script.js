@@ -1,9 +1,9 @@
-//https://www.youtube.com/watch?v=7JtLHJbm0kA yummy yumyum
+//https://www.youtube.com/watch?v=7JtLHJbm0kA yummy yumyum  // i should also figure how to embed godot games into the site...
 window.addEventListener("load", function() {
     const canvas = document.getElementById("canvas1");
     const ctx = canvas.getContext("2d");
     canvas.width = 1000;
-    canvas.height = 300;
+    canvas.height = 450;
     
     class InputHandler {
         constructor() {
