@@ -15,7 +15,6 @@
         
         <canvas id="canvas1"></canvas>
         <img id="player_spr" src="assets/images/spr_kyanorm.png">
-        <span id="disclaimer">trying very random things!!!!<br>controls are arrow keys and z to jump!!!</span>
         
         <script src="script.js"></script>
     </body>
@@ -25,14 +24,15 @@
         // Source - https://stackoverflow.com/a/67987248
         // Posted by programmerRaj
         // Retrieved 2026-09-23, License - CC BY-SA 4.0
-
+        
         fetch('https://api.github.com/repos/fury1012/fury1012.com/commits?per_page=1')
         .then(res => res.json())
         .then(res => {
             const commitDate = new Date(res[0].commit.committer.date);
             document.getElementById('commit-time').innerHTML = commitDate.toLocaleString();
         })
-
         </script>
+        
+        <span id="disclaimer">trying very random things!!!!<br>controls are arrow keys and z to jump!!!</span>
     </footer>
 </html>
