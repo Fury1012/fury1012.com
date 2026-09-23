@@ -9,9 +9,13 @@ body {
     transform: translate(-50%, 100%);
     border: 5px solid white;
 }
+#disclaimer {
+    position: absolute;
+    text-align: left;
+    transform: translate(-50%, 500%);
+    width: 100%;
+    font-size: 0.8em;
+}
 #player_spr {
     display: none;
-}
-.flipped {
-    transform: scaleX(-1);
 }

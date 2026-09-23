@@ -9,14 +9,30 @@
         <p>in the meantime, you can find a bunch about me at my <a href="https://fury1012.straw.page/">strawpage</a></p>
         <img src="assets/images/kyagiddy_nobg.gif" alt="giddy ass">
 
-        <br><a href="./testpage">New Page Test</a>
-        <p><a href="./games/berdly">flappy berdly</a> <br>(you have no clue how much power this gives me seeing this works)</p>
+        <br><a href="./testpage/">New Page Test</a>
+        <p><a href="./games/berdly/">flappy berdly</a> <br>(you have no clue how much power this gives me seeing this works)</p>
         <br>
-
-
-        <!-- <canvas id="canvas1"></canvas> -->
+        
+        <canvas id="canvas1"></canvas>
         <img id="player_spr" src="assets/images/spr_kyanorm.png">
-
-        <!-- <script src="script.js"></script> -->
+        <span id="disclaimer">trying very random things!!!!<br>controls are arrow keys and z to jump!!!</span>
+        
+        <script src="script.js"></script>
     </body>
+    <footer style = "font-size: 0.8em; margin-top: 20px;">
+        <p>last updated on: <span id="commit-time">Loading...</span></p>
+        <script>
+        // Source - https://stackoverflow.com/a/67987248
+        // Posted by programmerRaj
+        // Retrieved 2026-09-23, License - CC BY-SA 4.0
+
+        fetch('https://api.github.com/repos/fury1012/fury1012.com/commits?per_page=1')
+        .then(res => res.json())
+        .then(res => {
+            const commitDate = new Date(res[0].commit.committer.date);
+            document.getElementById('commit-time').innerHTML = commitDate.toLocaleString();
+        })
+
+        </script>
+    </footer>
 </html>
