@@ -41,7 +41,7 @@ window.addEventListener("load", function() {
             this.x = 0;
             this.y = this.gameHeight / 2;
             this.image = document.getElementById("player_spr");
-            this.scaleX = 1;
+            this.scaleX = 1; // i miss you vector2s 😔
             this.scaleY = 1;
             this.frameX = 0;
             this.maxFrameX = 3;
