@@ -43,6 +43,7 @@ window.addEventListener("load", function() {
     if (!os === "Windows" || !os === "Mac OS" || !os === "Linux") {
         isActive = false;
         canvas.style.display = "none";
+        disclaimer.style.display = "block";
         return;
     }
 
