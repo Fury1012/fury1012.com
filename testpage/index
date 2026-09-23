@@ -5,4 +5,9 @@
     <body style="background-color: #e0c4a4; text-align: center;">
         <h1>testing new page...</h1>
     </body>
+    <script>
+        if (window.location.href.endsWith(".html")) {
+            window.location.href = window.location.href.replace(".html", "");
+        }
+    </script>
 </html>
