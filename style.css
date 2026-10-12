@@ -12,7 +12,7 @@ body {
 #disclaimer {
     position: absolute;
     text-align: center;
-    transform: translate(-50%, 500%);
+    transform: translate(0%, 500%);
     width: 100%;
     font-size: 0.8em;
 }

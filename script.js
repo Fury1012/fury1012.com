@@ -98,6 +98,7 @@ window.addEventListener("load", function() {
             this.image = document.getElementById("player_spr");
             this.scaleX = 1; // i miss you vector2s 😔
             this.scaleY = 1;
+            this.facing_dir = 1;
             this.frameX = 0;
             this.maxFrameX = 3;
             this.frameY = 0;
@@ -164,9 +165,11 @@ window.addEventListener("load", function() {
         updateDirection(input) {
             if (input.keys.indexOf("ArrowRight") > -1 && !(input.keys.indexOf("ArrowLeft") > -1)) {
                 this.scaleX = 1;
+                this.facing_dir = 1;
             }
             else if (input.keys.indexOf("ArrowLeft") > -1 && !(input.keys.indexOf("ArrowRight") > -1)) {
                 this.scaleX = -1;
+                this.facing_dir = -1;
             }
         }
     }
